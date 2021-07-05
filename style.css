@@ -347,8 +347,15 @@ a:hover {
 }
 
 .navbar-toggle .icon-bar {
+    display: block;
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.icon-bar {
+    margin-bottom: 4px;
 }
 
 .nav-invert .navbar .nav {
@@ -1038,5 +1045,10 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
     }
 }
