@@ -107,13 +107,13 @@
 			<div class="col-sm-12">
 				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
 						<input id="name" class="form-control control-group" required placeholder="Ecrire votre nom" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
 						<input id="email" class="form-control" type="email" required placeholder="Ecrire votre email"/>
@@ -121,15 +121,15 @@
 					<div class="form-group">
 						<label for="sel1">Comment nous avez-vous connu ?</label>
 						<select class="form-control" id="sel1">
-						  <option>Réseau sociaux</option>
+						  <option>Réseaux sociaux</option>
 						  <option>Entourage</option>
 						  <option>Autre</option>
 						</select>
 					  </div>
 					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						<label for="message">
+							Brief de votre projet<br>
+						</label><textarea id="message" class="form-control" rows="4" cols="50" required placeholder="Ecrire votre message. Ajoutez autant de détails que nécessaire."></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -155,27 +155,30 @@
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<p class="text-center">
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					<a href="mailto:contact@lachouetteagence.com" class="contact">
+						contact@lachouetteagence.com
+					</a>
+					<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fab fa-twitter icon-md"></span></a>
+							<a class="social" aria-label="lien vers twitter" href="https://twitter.com/?lang=fr"><span class="fab fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fab fa-facebook-f icon-md"></span></a>
+							<a class="social" aria-label="lien vers facebook" href="https://www.facebook.com/"><span class="fab fa-facebook-f icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fab fa-dribbble icon-md"></span></a>
+							<a class="social" aria-label="lien vers dribbble" href="https://dribbble.com/"><span class="fab fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fab fa-instagram icon-md"></span></a>
+							<a class="social" aria-label="lien vers instagram" href="https://www.instagram.com/?hl=fr"><span class="fab fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
