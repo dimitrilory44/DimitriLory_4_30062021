@@ -110,20 +110,22 @@
 						<label>
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control control-group" required placeholder="Ecrire votre nom" />
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" required placeholder="Ecrire votre email"/>
 					</div>
 					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
+						<label for="sel1">Comment nous avez-vous connu ?</label>
+						<select class="form-control" id="sel1">
+						  <option>Réseau sociaux</option>
+						  <option>Entourage</option>
+						  <option>Autre</option>
+						</select>
+					  </div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
@@ -191,7 +193,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script src="./js/blocs.min.js"></script>
-<script src="./js/jqBootstrapValidation.min.js"></script>
+<script src="./js/jqBootstrapValidation.js"></script>
 <script src="./js/formHandler.min.js"></script>
 
 <!-- Analytics -->

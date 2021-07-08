@@ -517,6 +517,18 @@ button {
     box-shadow: none;
 }
 
+.error > label{
+    color: red!important;
+}
+
+.valid > label {
+    color: green!important;
+}
+
+.is-valid {
+    border-color: red!important;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
