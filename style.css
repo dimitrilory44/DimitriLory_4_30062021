@@ -45,11 +45,11 @@ a:hover {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 100px!important;
 }
 
 .bloc-md {
-    padding: 50px;
+    padding: 20px;
 }
 
 .bloc-sm {
@@ -90,11 +90,6 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
-
 .b-parallax {
     background-attachment: fixed;
 }
@@ -133,7 +128,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(87,87,87,1);
 }
 
 .d-bloc .a-btn:hover,
@@ -325,7 +320,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1.3em;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -347,8 +342,15 @@ a:hover {
 }
 
 .navbar-toggle .icon-bar {
+    display: block;
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.icon-bar {
+    margin-bottom: 4px;
 }
 
 .nav-invert .navbar .nav {
@@ -510,6 +512,18 @@ button {
     box-shadow: none;
 }
 
+.error > label{
+    color: red!important;
+}
+
+.valid > label {
+    color: green!important;
+}
+
+.is-valid {
+    border-color: red!important;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -580,10 +594,11 @@ a[data-lightbox]:hover img {
     padding: 20px;
     color: #FFF;
     background: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+    margin-top: 10px;
 }
 
 .close-lightbox {
@@ -650,8 +665,8 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
+    font-weight: 500;
+    color: #000000!important;
 }
 
 .container {
@@ -660,6 +675,8 @@ a {
 
 .hero-bloc-text {
     font-size: 38px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px black;
 }
 
 .hero-bloc-text-sub {
@@ -677,7 +694,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -740,7 +757,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin: 0 auto;
 }
 
 .portfolio-row {
@@ -753,7 +770,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -778,14 +795,18 @@ h4 {
     color: #F3976C!important;
 }
 
+.tc-black {
+    color: #000000!important;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white {
@@ -809,20 +830,16 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
-
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
+}
+
+.contact:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 1024px) {
@@ -890,6 +907,15 @@ h4 {
 }
 
 @media (max-width: 767px) {
+
+    .bg-banniere {
+        background-image: none!important;
+    }
+
+    .bg-presentation {
+        background-image: none;
+    }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -980,7 +1006,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 40px 0!important;
     }
     .bloc-sm,
     .bloc-md {
@@ -1038,5 +1064,10 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-between;
     }
 }
