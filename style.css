@@ -907,6 +907,15 @@ h4 {
 }
 
 @media (max-width: 767px) {
+
+    .bg-banniere {
+        background-image: none!important;
+    }
+
+    .bg-presentation {
+        background-image: none;
+    }
+
     .page-container {
         overflow-x: hidden;
         position: relative;
