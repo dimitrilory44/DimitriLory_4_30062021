@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+cite {
+    color:black;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -884,7 +888,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
+    main,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
@@ -916,7 +920,7 @@ h4 {
         background-image: none;
     }
 
-    .page-container {
+    main {
         overflow-x: hidden;
         position: relative;
     }
@@ -1062,6 +1066,15 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+
     .bloc-mob-center-text {
         text-align: center;
     }
