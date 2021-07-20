@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dimitrilory44/DimitriLory_4_30062021/issues"
   },
-  "homepage": "https://github.com/dimitrilory44/DimitriLory_4_30062021#readme"
+  "homepage": "https://github.com/dimitrilory44/DimitriLory_4_30062021#readme",
+  "dependencies": {
+    "styleflux": "^1.2.0"
+  }
 }
