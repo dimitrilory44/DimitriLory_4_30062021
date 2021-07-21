@@ -20,16 +20,30 @@ Si vous voulez installer mon projet, vous pouvez le cloner :
 ```bash
   git clone https://github.com/dimitrilory44/DimitriLory_4_30062021.git
 ```
+
+Changer vers la branche la plus optimisée :
+
+```bash
+  git checkout develop-access
+```
+
 Ensuite installer les dépendances :
 
 ```bash
   npm install
 ```
+
 Si vous voulez travailler sur la feuille de style :
 
 ```bash
   npm run sass 
 ```
+
+---------
+OU
+
+Télécharger la version 1.1.1 en allant dans les tags. Après avoir dézippé votre dossier Glisser-déposer sur votre navigateur le fichier index.html.
+
 ## Hebergement
 
 Le site est hébergé sur Github Pages vers ce [lien](https://dimitrilory44.github.io/DimitriLory_4_30062021/index.html).
